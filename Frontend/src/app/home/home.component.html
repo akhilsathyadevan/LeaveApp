@@ -1,0 +1,92 @@
+<div class="bgded overlay" style="background-image:url('../../assets/images/demo/backgrounds/blck.jpg');">
+    <section class="hoc container clear">
+      <div class="points group"> 
+        <h2>LEAVE APPLICATION</h2>
+        
+         <td> <input type="text" placeholder="Enter Employee Id" [(ngModel)]='id'> </td>
+         <tr><td><button class="btn btn-primary" (click)='checkStatus(id)'>Check Status</button></td>
+          
+         <td><label for="" style="color: green;">{{currentstatus}}</label></td>
+        </tr>
+        
+         
+        <form action="" (ngSubmit)='getDetails()' #userreq='ngForm'>
+        
+        <table>
+          <tr>
+            <td>
+              Employee Id :
+            </td>
+            <td>
+              <input type="text" class="eId" name="eId" placeholder="Employee Id" [(ngModel)]='details.eId' required>
+            </td>
+            
+          </tr>
+
+          <tr>
+            <td>
+              Form :
+            </td>
+            <td>
+              <input type="date" class="fromdate" name="fromdate" [(ngModel)]='details.fromdate'  required>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>
+              To :
+            </td>
+            <td>
+              <input type="date" class="todate" name="todate" [(ngModel)]='details.todate' required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+             Reason :
+            </td>
+            <td>
+              <input type="text-area" class="text-area" class="reason" name="reason" [(ngModel)]='details.reason' required >
+            </td>
+            
+          </tr>
+          <tr>
+            <td>
+             
+            </td>
+            <td>
+              <button class="btn btn-primary" [disabled]='userreq.form.invalid'>Send Request</button>
+            </td>
+            
+          </tr>
+          
+        </table>
+      </form>
+         
+        <!-- <div class="sectiontitle"> -->
+          <!-- <p class="nospace font-xs">Expolore the infinite knowledge</p>
+          <h6 class="heading font-x2">IF YOU CAN DREAM IT , YOU CAN DO IT</h6>
+        </div>
+        <figure class="one_half first">
+          <ul class="nospace clear">
+            <li><a href="#"><i class="fab fa-fly"></i></a>
+              <h6 class="heading">Ante fringilla nisl eu</h6>
+              <p>Gravida lorem ligula quis ligula pellentesque congue semper felis maecenas rutrum euismod nibh class aptent taciti.</p>
+            </li>
+            <li><a href="#"><i class="fab fa-audible"></i></a>
+              <h6 class="heading">Sociosqu ad litora torquent</h6>
+              <p>Per conubia nostra per inceptos himenaeos mauris lectus enim luctus vitae viverra a pharetra mollis diam aliquam.</p>
+            </li>
+            <li><a href="#"><i class="fas fa-umbrella-beach"></i></a>
+              <h6 class="heading">Tincidunt mi ut pede maecenas</h6>
+              <p>Nunc urna porttitor eget molestie a consequat at lectus duis eget pede vitae nunc vehicula pharetra donec.</p>
+            </li>
+          </ul>
+        </figure> -->
+        <!-- <div class="one_half"><a class="imgover" href="#"><img class="borderedbox inspace-10" src="../../assets/images/demo/backgrounds/wp1.jpg" alt=""></a> -->
+        <!-- </div> -->
+      </div>
+    </section>
+  </div>
+
+  
+ 

@@ -1,0 +1,30 @@
+<div class="wrapper">
+    <div class="inner">
+        <img src="../../assets/images/demo/image-1.png" alt="" class="image-1">
+        <form action="post" (ngSubmit)='insertUsers()' #signup='ngForm'>
+            <h3>New Account?</h3>
+            <div class="form-holder">
+                <span class="lnr lnr-user"></span>
+                <input type="text" class="form-control" name="eId" placeholder="Empoloyee Id" [(ngModel)]='user.eId' required>
+            </div>
+            <div class="form-holder">
+                <span class="lnr lnr-phone-handset"></span>
+                <input type="text" class="form-control" name="emailId" placeholder="Email Id" [(ngModel)]='user.emailId' required>
+            </div>
+        
+            <div class="form-holder">
+                <span class="lnr lnr-lock"></span>
+                <input type="text" class="form-control" name="username" placeholder="Username" [(ngModel)]='user.userName' required>
+            </div>
+            <div class="form-holder">
+                <span class="lnr lnr-lock"></span>
+                <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]='user.password' required>
+            </div>
+            <button [disabled]='signup.form.invalid'>
+                <span>Register</span>
+            </button>
+        </form>
+        <img src="../../assets/images/demo/image-2.png" alt="" class="image-2">
+    </div>
+    
+</div>

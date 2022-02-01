@@ -1,0 +1,33 @@
+<div class="bgded overlay" style="background-image:url('../../assets/images/demo/backgrounds/blck.jpg');">
+    <section class="hoc container clear">
+      <div class="points group"> 
+        <h2>SHOW REQUESTS</h2>
+       <form action="">
+           <table class="table table-responsive">
+               <tr>
+                   <th>Employee Id</th>
+                   <th>Requested Days</th>
+                   <th>Total Leave</th>
+                   <th>Reason</th>
+                   <th>Accept</th>
+                   <th>Reject</th>
+               </tr>
+               <tr *ngFor='let i of leaves'>
+                   <td>{{i.eId}}</td>
+                   <td>{{i.result}}</td>
+                   <td >{{i.totalL}}</td>
+                   <td>{{i.reason}}</td>
+                   <td><button class="btn btn-primary"(click)='accept(i)'>Accept</button></td>
+                   <td><button class="btn btn-danger" (click)='delete(i)'>Reject</button></td>
+               </tr>
+           </table>
+
+       </form>
+         
+        
+      </div>
+    </section>
+  </div>
+
+  
+ 

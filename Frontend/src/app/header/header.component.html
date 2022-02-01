@@ -1,0 +1,30 @@
+<div class="bgded overlay" style="background-image:url('../../assets/images/demo/backgrounds/01.png');"> 
+    <div class="wrapper row0">
+      <div id="topbar" class="hoc clear"> 
+        <p class="fl_left nospace"><i class="fas fa-phone"></i> +91 9876543210</p>
+        <!-- <p class="fl_right nospace"><a class="btn" href="#">Get A Quote</a></p> -->
+      </div>
+    </div>
+    
+    <div class="wrapper row1">
+      <header id="header" class="hoc clear">
+        <div id="logo" class="fl_left"> 
+         
+          <h1><a href="index.html">Leave App</a></h1>
+         
+        </div>
+        <nav id="mainav" class="fl_right"> 
+         
+          <ul class="clear">
+            <li class=""><a routerLink='/home' *ngIf='_auth.userloggedIn()'>Employees</a></li>
+            <li class=""><a routerLink='/admin' *ngIf='_auth.loggedIn()&&_auth.adminloggedIn()'>Admin</a></li>
+            <li class=""><a routerLink='/' *ngIf='!_auth.loggedIn()'>Login</a></li>
+            <li class=""><a routerLink='/signup' *ngIf='!_auth.loggedIn()'>Signup</a></li>
+            <li class=""><a routerLink='/' *ngIf='_auth.loggedIn()' (click)="logout()">Logout</a></li>
+          </ul>
+        
+        </nav>
+      </header>
+    </div> 
+</div>    
+

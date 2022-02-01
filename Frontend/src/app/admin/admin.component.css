@@ -1,0 +1,19 @@
+h2{
+    text-align: center;
+}
+.btn{
+    width: 100px;
+}
+.btn-danger{
+    background-color: brown;
+}
+.btn-primary{
+    background-color: green;
+}
+tr{
+    text-align: center;
+    width:fit-content;
+}
+table{
+    width: 100%;
+}
